@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 1rem;
+            color: white;
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        main {
+            padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .container1{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+        }
+
+        .candidate {
+            width: calc(90% - 1rem);
+            margin-bottom: 2rem;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .candidate:hover {
+            transform: translateY(-5px);
+        }
+
+        .candidate img {
+            width: 100px;
+            height: 100px;
+            margin-right: 1rem;
+            border-radius: 50%;
+        }
+
+        .candidate h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            color: #007bff;
+        }
+
+        .candidate p {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .candidate button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .candidate button:hover {
+            background-color: #0056b3;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 9999;
+            animation: popupFadeIn 0.5s ease forwards;
+        }
+
+        .popup-content {
+            text-align: center;
+            color: white;
+            font-size: 16px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .bt2 {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .bt2:hover {
+            background-color: #0056b3;
+        }
+
+        @keyframes popupFadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+.about {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.about h3 {
+    margin: 0;
+}
+
+.about a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+    <script>
+        function showPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    function showPopup() {
+        document.getElementById("popup").style.display = "block";
+        setTimeout(function() {
+            window.location.href ="vote.html";
+        }, 3000);
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+
+    </script>
+</head>
+<body>
+<header>
+    <h1>Board of Directors Election</h1>
+</header>
+<main>
+    <section class="container1">
+        <h2>President Candidates</h2>
+        <br><br><br><br><br>
+        <div class="candidate">
+            <img src="lpu.jpeg" alt="Candidate Image">
+            <h3>Ritesh Pichai</h3>
+            <p>Aliquam utrum nibh rutrum nibh vitae tortor dapibus egestas. Cras condimentum dapibus tellus vel
+                semper. Quisque vel dui molestie est auctor utrum nibh porttitor.</p>
+            <button class="bt1">View Manifesto</button>
+            <input type="radio" name="select" required>
+        </div>
+        <div class="candidate">
+            <img src="lpu.jpeg" alt="Candidate Image">
+            <h3>Saksham Kapoor</h3>
+            <p>Aliquam utrum nibh rutrum nibh vitae tortor dapibus egestas. Cras condimentum dapibus tellus vel
+                semper. Quisque vel dui molestie est auctor utrum nibh porttitor.</p>
+            <button class="bt1">View Manifesto</button>
+            <input type="radio" name="select" required>
+        </div>
+        <div class="candidate">
+            <img src="lpu.jpeg" alt="Candidate Image">
+            <h3>Pradumn Shinganiya</h3>
+            <p>Aliquam utrum nibh rutrum nibh vitae tortor dapibus egestas. Cras condimentum dapibus tellus vel
+                semper. Quisque vel dui molestie est auctor utrum nibh porttitor.</p>
+            <button class="bt1">View Manifesto</button>
+            <input type="radio" name="select" required>
+        </div>
+        <div class="candidate">
+            <img src="lpu.jpeg" alt="Candidate Image">
+            <h3>Ansh Bond</h3>
+            <p>Aliquam utrum nibh rutrum nibh vitae tortor dapibus egestas. Cras condimentum dapibus tellus vel
+                semper. Quisque vel dui molestie est auctor utrum nibh porttitor.</p>
+            <button class="bt1">View Manifesto</button>
+            <input type="radio" name="select" required>
+        </div>
+    </section>
+    <section class="container1">
+        <h2>Vice President Candidates</h2>
+        <br><br><br><br><br>
+        <div class="candidate">
+            <img src="lpu.jpeg" alt="Candidate Image">
+            <h3>Suraj Tripathi</h3>
+            <p>Aliquam utrum nibh rutrum nibh vitae tortor dapibus egestas. Cras condimentum dapibus tellus vel
+                semper. Quisque vel dui molestie est auctor utrum nibh porttitor.</p>
+            <button class="bt1">View Manifesto</button>
+            <input type="radio" name="select1">
+        </div>
+        <div class="candidate">
+            <img src="lpu.jpeg" alt="Candidate Image">
+            <h3>Aryan<h3>
+            <p>Aliquam utrum nibh rutrum nibh vitae tortor dapibus egestas. Cras condimentum dapibus tellus vel
+                semper. Quisque vel dui molestie est auctor utrum nibh porttitor.</p>
+            <button class="bt1">View Manifesto</button>
+            <input type="radio" name="select1" required>
+        </div>
+        <div class="candidate">
+            <img src="lpu.jpeg" alt="Candidate Image">
+            <h3>Sweta Sharma</h3>
+            <p>Aliquam utrum nibh rutrum nibh vitae tortor dapibus egestas. Cras condimentum dapibus tellus vel
+                semper. Quisque vel dui molestie est auctor utrum nibh porttitor.</p>
+            <button class="bt1">View Manifesto</button>
+            <input type="radio" name="select1" required>
+        </div>
+
+        <div class="candidate">
+            <img src="lpu.jpeg" alt="Candidate Image">
+            <h3>Priya Singh</h3>
+            <p>Aliquam utrum nibh rutrum nibh vitae tortor dapibus egestas. Cras condimentum dapibus tellus vel
+                semper. Quisque vel dui molestie est auctor utrum nibh porttitor.</p>
+            <button class="bt1">View Manifesto</button>
+            <input type="radio" name="select1" required>
+        </div>
+    </section>
+</main>
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <p>Thank you for voting!</p>
+    </div>
+</div>
+<button onclick="showPopup()" class="bt2">Vote</button>
+<br><br><br>
+<footer class="about">
+    <h3><a href="about.html">About Us</a></h3>
+</footer>
+</body>
+</html>

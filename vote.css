@@ -1,0 +1,16 @@
+#voting-system {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#vote-button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#results {
+    margin-top: 50px;
+    font-size: 20px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Online Voting Community</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d3d3d3;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffc80055;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(45, 34, 34, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1,h2, p {
+            text-align: center;
+        }
+        h1,h2{
+            color: #000000;
+            animation: slideIn 1s ease-in-out;
+        }
+        p {
+            color: #000000;
+            animation: slideIn 1s ease-in-out;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: auto;
+            animation: spin 2s linear infinite;
+            border-radius: 100%;;
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Online Voting Community Logo" class="logo">
+        <h1>About</h1>
+        <h2>Online Voting Community</h2>
+        <p>Welcome to the Online Voting Community, where your voice matters!</p>
+        <p>A secure and inclusive online voting platform specifically designed for college communities to facilitate democratic processes and decision-making.</p>
+        <p>This platform addresses the challenges faced by traditional voting systems, such as manual ballot counting, low voter turnout, and potential security risks.</p>
+        <p>Key features of the platform are user authentication and verification mechanisms to ensure eligibility and prevent fraudulent voting, encrypted and tamper-proof voting ballots, accessibility options.</p>
+        <p>Join us today and be part of a vibrant community dedicated to making voices heard!</p>
+    </div>
+</body>
+</html>

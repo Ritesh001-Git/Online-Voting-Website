@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Login</title>
+    <style>
+        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            background-image: url(lpu.jpeg);
+            background-repeat: no-repeat ;
+            height: 100%;
+            width: 100%;
+            background-size: cover ;
+        }
+        .logo {
+            text-align: center;
+            padding: 20px;
+            animation: logoSpin 4s infinite linear;
+        }
+        .logo img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+        .logo img:hover {
+            transform: scale(1.1);
+        }
+        .logo p {
+            font-size: 18px;
+            font-family: monospace;
+            margin-top: 5px;
+            color: black;
+            font-weight: 300;
+        }
+        #head1 {
+            text-align: center;
+            font-size: 40px;
+            margin-top: 20px;
+        }
+        .login-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+            animation: fadeIn 1s ease forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .login-container h1 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .login-container label {
+            font-size: 20px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: .5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .login-container button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: rgb(136, 219, 12);
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 2%;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .login-container button:hover {
+            background-color: rgb(7, 126, 7);
+        }
+        .a1{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="Election Department Logo">
+        <p>Election Department of LPU</p>
+    </div>
+    <h1 id="head1">Board of Directors Election</h1>
+    <div class="login-container">
+        <h1>Login to Vote</h1>
+        <form action="" method="post">
+            <label for="voter-id">Voter ID:</label>
+            <input type="text" id="voter-id" name="voter-id" required>
+            <label for="voter-key">Voter Key:</label>
+            <input type="password" id="voter-key" name="voter-key" required>
+            <button type="submit"><a href="p.html">Login to Vote</a></button>
+        </form>
+    </div>
+</body>
+</html>
